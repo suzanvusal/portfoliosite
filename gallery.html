@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Under Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+
+        .gallery img:nth-child(1) {
+            animation-delay: 1s;
+        }
+        .gallery img:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+        .gallery img:nth-child(3) {
+            animation-delay: 2s;
+        }
+        .gallery img:nth-child(4) {
+            animation-delay: 2.5s;
+        }
+        .gallery img:nth-child(5) {
+            animation-delay: 3s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .note {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #d9534f;
+            font-weight: bold;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .dog-image {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            animation: moveDog 4s infinite ease-in-out;
+        }
+
+        @keyframes moveDog {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, -30px);
+            }
+            50% {
+                transform: translate(0, 0);
+            }
+            75% {
+                transform: translate(-50px, 30px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gallery - Coming Soon</h1>
+        <p>This section is in progress, please visit later.</p>
+        
+        <div class="gallery">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="images/g2.jpg" alt="Image 3">
+            <img src="images/g3.jpg" alt="Image 4">
+            <img src="images/g1.jpg" alt="Image 5">
+        </div>
+
+        <!-- Jumping Dog Image -->
+        <img src="images/dog.gif" alt="Jumping Dog" class="dog-image">
+
+        <div class="note">
+            <p>This page is under construction. Check back soon for more updates!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sujan Bhusal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujincloud</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <p>Hi! I am</p>
+            <h1>Sujan Bhusal</h1>
+            <p>Cloud Engineer | DevOps Enthusiast | AWS Certified</p>
+            
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu" onclick="toggleMenu()" aria-label="Toggle Menu" aria-expanded="false">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <!-- Navigation -->
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="blog.html">My Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="counter-number"></div>
+            <div id="visitor-count" class="visitor-count">
+                <span id="visitor-count-value"></span>
+            </div>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <h3>Welcome to my Professional Hub!</h3>
+                    <p>Hello! I'm Sujan Bhusal, a passionate Cloud Engineer with over 5 years of experience in designing, implementing, and managing cloud infrastructure...</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>Cloud Engineer</h3>
+                    <p>I specialize in AWS, Google Cloud Platform, and I have a strong background in DevOps practices...</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>DevOps Enthusiast</h3>
+                    <p>I've worked on various CI/CD pipelines and containerization tools like Docker and Kubernetes...</p>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-aws" aria-label="AWS"></i>
+                    <h3>AWS</h3>
+                    <p>Expertise in EC2, S3, Lambda, RDS, and more.</p>
+                </div>
+                <div class="skill azure">
+                    <i class="fab fa-microsoft" aria-label="Azure"></i>
+                    <h3>Azure</h3>
+                    <p>Proficient in Azure services like Virtual Machines, App Services, and Azure DevOps.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-google" aria-label="Google Cloud"></i>
+                    <h3>Google Cloud</h3>
+                    <p>Proficient in GCP services like Compute Engine, BigQuery, and Kubernetes Engine.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-docker" aria-label="Docker"></i>
+                    <h3>Docker</h3>
+                    <p>Skilled in containerization and orchestration with Docker and Kubernetes.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git" aria-label="Git"></i>
+                    <h3>Git & CI/CD</h3>
+                    <p>Proficient in version control and continuous integration/continuous deployment pipelines.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code" aria-label="Infrastructure as Code"></i>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Experience with Terraform and CloudFormation for infrastructure automation.</p>
+                </div>
+                <!-- New Skills Added -->
+                <div class="skill">
+                    <i class="fas fa-shield-alt" aria-label="Security"></i>
+                    <h3>Security & Compliance</h3>
+                    <p>Proficient in AWS GuardDuty, Security Hub, and compliance frameworks like NIST, CIS, and HIPAA.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database" aria-label="Databases"></i>
+                    <h3>Databases</h3>
+                    <p>Experience with Amazon RDS, MySQL, Postgres, DynamoDB, and MongoDB.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-tools" aria-label="DevSecOps"></i>
+                    <h3>DevSecOps</h3>
+                    <p>Skilled in SonarQube, OWASP, and integrating security into CI/CD pipelines.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js" aria-label="JavaScript"></i>
+                    <h3>JavaScript</h3>
+                    <p>Experienced in front-end development and building interactive web applications using JavaScript.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python" aria-label="Python"></i>
+                    <h3>Python</h3>
+                    <p>Skilled in data analysis, machine learning, and backend development with Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Cloud Migration for E-commerce Platform</h3>
+                    <p>Led the migration of a monolithic e-commerce platform to AWS, streamlining infrastructure and reducing downtime by 30%. Successfully implemented cloud-native solutions to enhance system scalability, reliability, and performance. Coordinated with cross-functional teams to ensure a seamless transition, optimizing application performance and reducing operational costs. Leveraged AWS services such as EC2, S3, and RDS to improve data handling, storage, and processing efficiency.</p>
+                </div>
+                <div class="project">
+                    <h3>CI/CD Pipeline Automation</h3>
+                    <p>Designed and implemented an efficient CI/CD pipeline using Jenkins and Docker to automate the software delivery process, reducing deployment time by 50%. Integrated automated testing, continuous integration, and continuous deployment into the workflow, improving code quality and accelerating release cycles. Optimized containerization using Docker for consistent and scalable deployment across multiple environments, ensuring smooth transitions from development to production. Collaborated with development and operations teams to ensure seamless integration and faster delivery of new features.</p>
+                </div>
+                <div class="project">
+                    <h3>Serverless Data Processing</h3>
+                    <p>Developed a highly scalable serverless data processing system using AWS Lambda and S3, handling millions of records daily with minimal latency. Leveraged AWS Lambda to automatically process and analyze incoming data, ensuring efficient and cost-effective operations without the need for dedicated server infrastructure. Implemented S3 for secure and scalable data storage, while utilizing event-driven triggers to initiate processing workflows. Optimized the system to handle large volumes of data seamlessly, reducing operational overhead and improving data processing speed and reliability.</p>
+                </div>
+                <!-- New Project Added -->
+                <div class="project">
+                    <h3>Centralized Logging & Monitoring</h3>
+                    <p>Designed and implemented a centralized logging and monitoring solution using AWS CloudTrail, CloudWatch, and Splunk to provide real-time visibility into system performance and security. Integrated CloudTrail for comprehensive logging of API calls across AWS services, ensuring full auditability and compliance. Utilized CloudWatch for monitoring resource utilization and application performance, setting up custom alarms and automated responses to incidents. Integrated Splunk for advanced data analysis and visualization, enabling proactive troubleshooting, improving system reliability, and ensuring the timely detection of potential security threats.</p>
+                </div>
+                <div class="project">
+                    <h3>Effective Heart Disease Prediction Using Hybrid ML techniques</h3>
+                    <p>Developed a hybrid machine learning model for Cardio-vascular disease prediction using Machine learning algorithms like Linear Regression, Decision Trees, Random Forest, and KNN. The dataset, sourced from Kaggle, was preprocessed and scaled before training models. A Voting Classifier was implemented to combine predictions, enhancing accuracy. The project demonstrated the effectiveness of ensemble methods in healthcare prediction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <!-- Updated Experience Section -->
+                <div class="experience-item">
+                    <h3>Cloud Engineer at Treadmill Factory Inc.</h3>
+                    <p><strong>Duration:</strong> Nov 2021 – Present</p>
+                    <p><strong>Location:</strong> Toronto, CA</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Designed and implemented AWS Organizations and Control Tower for scalable multi-account structures.</li>
+                        <li>Developed Service Control Policies (SCPs) for security and compliance.</li>
+                        <li>Integrated AWS Security services like AWS Config, CloudTrail, GuardDuty, and Security Hub.</li>
+                        <li>Automated infrastructure provisioning using Terraform and AWS CloudFormation.</li>
+                        <li>Designed CI/CD pipelines with GitHub Actions and Jenkins for multi-account deployments.</li>
+                        <li>Implemented centralized logging and monitoring using AWS CloudTrail, CloudWatch, and Splunk.</li>
+                        <li>Hardened web applications with AWS WAF and Azure Application Gateway.</li>
+                        <li>Conducted performance optimization and cost management using AWS Cost Explorer and Budgets.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Cloud Infrastructure Engineer at Mphasis Tech Foundation</h3>
+                    <p><strong>Duration:</strong> Oct 2019 – Oct 2021</p>
+                    <p><strong>Location:</strong> Kathmandu, NP</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Designed and implemented secure, scalable cloud architectures using AWS services.</li>
+                        <li>Automated infrastructure provisioning using Terraform and AWS CloudFormation.</li>
+                        <li>Set up centralized logging using ELK Stack and AWS CloudWatch.</li>
+                        <li>Established CI/CD pipelines using Jenkins for infrastructure deployment.</li>
+                        <li>Migrated servers and databases from on-premises to AWS using AWS Migration Services.</li>
+                        <li>Automated ML model deployment using Kubeflow, MLflow, and SageMaker Pipelines.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Computer Teacher at Amar Ma. Bhidhyalaya</h3>
+                    <p><strong>Duration:</strong> April 2020 - Jan 2021</p>
+                    <p><strong>Location:</strong> Butwal-19, NP</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>I participated in the USAID Project for Rural Schools, where I taught computer science and coding to government school children, enhancing their digital literacy and technical skills.</li>
+                        <li>Helping students to make most out of their Graduating Year of the secondary schooling.</li>
+                        <li>I provide personalized support to ensure students grasp key concepts and thrive in coding. Additionally, I create engaging, interactive learning experiences that inspire students to apply their skills in real-world scenarios, while promoting a collaborative and growth-oriented classroom environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="profile-image">
+                    <img src="images/profileimage.JPG" alt="Sujan Bhusal">
+                </div>
+                <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+                <div class="contact-links">
+                    <a href="mailto:najussalvu@gmail.com"><i class="fas fa-envelope" aria-label="Email"></i> najussalvu@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin" aria-label="LinkedIn"></i> LinkedIn</a>
+                </div>
+                <a href="sujresume.pdf" target="_blank" class="resume-button">
+                    <i class="fas fa-download"></i> View & Download my Resume
+                </a>
+                
+            </div>
+        </div>
+    </section>
+     <!-- Message Form Section -->
+<section id="message" class="section">
+    <div class="container">
+        <h2>Send Me a Message</h2>
+        <form id="message-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sujan Bhusal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
